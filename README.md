@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./portone.png" width="128" alt="Port One">
+  <img src="./ICON.PNG" width="128" alt="Port One">
 </p>
 
 <h1 align="center">Port One</h1>
