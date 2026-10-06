@@ -19,6 +19,10 @@
 
 <p align="center"><strong>📌 当前版本：0.6.38</strong></p>
 
+<p align="center">
+  <img src="./poster.webp" alt="Port One 功能概览" width="100%">
+</p>
+
 ## 🧭 快速导航
 
 | 🧭 入口 | 说明 |
@@ -38,7 +42,7 @@
 | 📁 **文件管理** | 在线浏览、编辑、上传下载、文件操作，并支持压缩与解压。 |
 | 🔗 **外链分享** | 为文件或目录生成带密码/有效期的分享链接。 |
 | 🌐 **静态站点** | 把任意目录一键发布为静态网站。 |
-| 🛰️ **组网穿透** | 简易配置 FRPC、EasyTier 和 Cloudflare Tunnel 快速组网；FRPC/EasyTier 支持参数随启，Cloudflare Tunnel 支持管理页配置和 `-cf-token` 导入。 |
+| 🛰️ **组网穿透** | FRPC、EasyTier 和 Cloudflare Tunnel 快速组网，支持参数随启。 |
 
 ---
 
