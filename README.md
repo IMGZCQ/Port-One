@@ -44,71 +44,36 @@
 
 ## 📝 最近更新
 
-<details open>
-<summary><strong>🚀 0.6.38 · 最新版本</strong></summary>
+<details>
+<summary><strong>📚 更新日志（0.6.11 - 0.6.38，点击展开）</strong></summary>
 
-### 0.6.38
+### 🚀 0.6.38 · 最新版本
 
 - 完善单口代理固定子路径的路径映射和切换跳转：配置 `主机:端口/路径` 后，根路径与子路径请求都会正确到达后端，切换入口会直接进入配置路径。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.37</strong></summary>
 
 ### 0.6.37
 
 - 组网穿透新增 `-cf-token` 启动参数，可在首次启动时导入 Cloudflare 命名隧道的 Token；已有 Cloudflare 配置默认不覆盖，使用 `-force` 可覆盖。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.36</strong></summary>
-
 ### 0.6.36
 
 - 单口代理的“路径入口”统一改称“入口标识”，相关列表、表单、帮助文案和 `/@app/{入口标识}` 地址同步更新。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.35</strong></summary>
 
 ### 0.6.35
 
 - 组网穿透重启时状态按钮显示“重启中”；重启前会清除旧隧道地址，避免展示已经失效的 URL。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.34</strong></summary>
-
 ### 0.6.34
 
 - Cloudflare Tunnel 配置中的隧道类型字段固定宽度，地址和 Token 输入框占用剩余宽度，窄屏下更易填写。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.33</strong></summary>
 
 ### 0.6.33
 
 - 组网穿透的运行和停止操作合并为一个按钮，按钮文字会根据当前状态在“运行”和“停止”之间切换。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.31</strong></summary>
-
 ### 0.6.31
 
 - Cloudflare Tunnel 会自动从日志解析隧道地址并显示在状态栏；移除手动填写“隧道域名 URL”的输入项。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.26</strong></summary>
 
 ### 0.6.26
 
@@ -116,19 +81,9 @@
 - Cloudflare Tunnel 仅在管理页配置，不增加启动命令参数；Token 不会通过管理 API 返回，留空会保留已保存的 Token。
 - 首次运行时可自动准备当前平台的 `cloudflared` 程序，并沿用现有下载线路与校验流程。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.25</strong></summary>
-
 ### 0.6.25
 
 - 修复 HTTPS 反向代理下管理页面 iframe 登录异常：移除 `/@admin` 的 `X-Frame-Options`，保留 CSP `frame-ancestors` 限制；识别 `X-Forwarded-Proto: https` 并设置 Secure Cookie。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.24</strong></summary>
 
 ### 0.6.24
 
@@ -136,103 +91,48 @@
 - 本地终端改用右键菜单管理复制、粘贴、清屏、收藏夹、快捷命令、最大化/恢复和关闭会话；Windows 默认使用 `cmd.exe` 并切换 UTF-8 代码页。
 - 单口代理地址输入框会根据 TCP 或 Unix Socket 类型显示对应示例。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.23</strong></summary>
-
 ### 0.6.23
 
 - 文件管理工具栏的“返回上级”和“刷新”按钮进一步放大，图标尺寸提升至 24px，并加宽上级箭头，提升可见性。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.22</strong></summary>
 
 ### 0.6.22
 
 - 文件管理工具栏的“返回上级”和“刷新”图标加大并加粗，提升识别度。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.21</strong></summary>
-
 ### 0.6.21
 
 - 文件管理工具栏的上级、刷新、列表和图标切换按钮改为纯图标显示，减少工具栏占用并保持操作提示。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.20</strong></summary>
 
 ### 0.6.20
 
 - 文件管理工具栏将“新建目录”“新建文件”“上传”合并为“+”菜单，减少工具栏占用。
 - 移除工具栏中的剪切、复制、删除按钮，相关操作保留在右键菜单和快捷键中；粘贴按钮仅在剪贴板有内容时显示。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.19</strong></summary>
-
 ### 0.6.19
 
 - 单口代理地址支持“主机:端口/路径”写法，例如 `127.0.0.1:8080/panel`；保存时自动拆分地址和路径，切换入口会直接进入配置路径。
 - 修复根目录为 404 的服务无法作为入口的问题；未填写路径的原有转发行为保持不变。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.18</strong></summary>
-
 ### 0.6.18
 
 - 修复静态站点作为根默认时无法从其他后端切回的问题：静态站点的“切换入口”改用 `/@web`，切换后清除旧的 `proxy_backend` 路由 Cookie；直接访问 `/@web/{路径入口}/` 的行为保持不变。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.17</strong></summary>
 
 ### 0.6.17
 
 - 上传同名冲突对话框新增“全部按照如此处理”，勾选后当前批次后续冲突自动沿用所选处理方式。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.16</strong></summary>
-
 ### 0.6.16
 
 - 文件上传同名冲突选择“保留两者”时，自动重命名改为“名称_1.扩展名”“名称_2.扩展名”，不再使用空格和括号。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.15</strong></summary>
 
 ### 0.6.15
 
 - 文件管理上传同名文件时新增冲突处理：支持取消、跳过、保留两者和替换。
 - 批量上传会正确统计跳过项，并在选择保留两者时自动生成不冲突文件名。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.14</strong></summary>
-
 ### 0.6.14
 
 - 版本维护更新，版本号升级至 0.6.14。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.13</strong></summary>
 
 ### 0.6.13
 
@@ -240,20 +140,10 @@
 - 将「反向代理」统一更名为「单口代理」，覆盖界面菜单、标签页、关于、应用描述与文档。
 - 修复「清理缓存」：管理会话失效时也能清除 HttpOnly 的路由 Cookie 与各后端鉴权 Cookie；清理失败时明确提示，不再静默忽略。
 
-</details>
-
-<details>
-<summary><strong>✨ 0.6.12</strong></summary>
-
 ### 0.6.12
 
 - 文件管理右键菜单新增压缩与解压：文件或目录可压缩为 ZIP、TAR.GZ，压缩包可解压 ZIP、TAR.GZ、TGZ、TAR、GZ。
 - 压缩与解压采用临时文件或临时目录完成后再替换，并限制路径穿越、符号链接、硬链接以及解压后体积，降低误操作和安全风险。
-
-</details>
-
-<details>
-<summary><strong>✨ 0.6.11</strong></summary>
 
 ### 0.6.11
 
