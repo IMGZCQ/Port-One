@@ -17,8 +17,6 @@
 > [!NOTE]
 > Port One 是一个面向个人、家庭服务器和小型团队的单端口 Web 管理面板。它可以把多个后端服务集中到同一个域名和端口下，并集成单口代理、终端、文件、分享、静态站点和组网穿透等常用运维功能。
 
-<p align="center"><strong>📌 当前版本：0.6.38</strong></p>
-
 <p align="center">
   <img src="./poster.webp" alt="Port One 功能概览" width="100%">
 </p>
