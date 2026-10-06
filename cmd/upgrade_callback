@@ -1,0 +1,4 @@
+#!/bin/bash
+# 升级后确保数据目录归属应用用户
+chown -R "$TRIM_USERNAME:$TRIM_GROUPNAME" "$TRIM_PKGVAR" 2>/dev/null || true
+exit 0

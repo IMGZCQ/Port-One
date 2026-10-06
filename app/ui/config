@@ -1,0 +1,16 @@
+{
+	".url": {
+		"port_one.main": {
+			"title": "Port One",
+			"icon": "images/icon_{0}.png",
+			"type": "iframe",
+			"protocol": "http",
+			"port": "${wizard_port}",
+			"url": "/@admin",
+			"allUsers": false,
+			"control": {
+				"accessPerm": "readonly"
+			}
+		}
+	}
+}
