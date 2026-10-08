@@ -17,7 +17,7 @@
 > [!NOTE]
 > Port One 是一个面向个人、家庭服务器和小型团队的单端口 Web 管理面板。它可以把多个后端服务集中到同一个域名和端口下，并集成单口代理、终端、文件、分享、静态站点和组网穿透等常用运维功能。
 
-<p align="center"><strong>📌 当前版本：0.6.51</strong></p>
+<p align="center"><strong>📌 当前版本：0.6.52</strong></p>
 
 <p align="center">
   <img src="./poster.webp" alt="Port One 功能概览" width="100%">
@@ -49,11 +49,12 @@
 ## 📝 最近更新
 
 <details>
-<summary><strong>📚 更新日志（0.6.11 - 0.6.51，点击展开）</strong></summary>
+<summary><strong>📚 更新日志（0.6.11 - 0.6.52，点击展开）</strong></summary>
 
 | 版本 | 更新内容 |
 | --- | --- |
-| **🚀 0.6.51 · 最新版本** | 修复 fnOS 应用入口在部分环境跳转到 `localhost` 的问题；CGI 页面改由浏览器读取当前访问主机，再按所选 HTTP/HTTPS 和端口跳转到管理入口。 |
+| **🚀 0.6.52 · 最新版本** | 修复 HTTP/HTTPS 切换后管理登录可能因旧 Secure 会话 Cookie 失效的问题；HTTP 与 HTTPS 使用独立管理会话 Cookie，并完善缓存清理和反向代理鉴权 Cookie 隔离，避免内部会话凭证泄漏到上游服务。 |
+| **0.6.51** | 修复 fnOS 应用入口在部分环境跳转到 `localhost` 的问题；CGI 页面改由浏览器读取当前访问主机，再按所选 HTTP/HTTPS 和端口跳转到管理入口。 |
 | **0.6.50** | fnOS 应用入口改为 CGI 跳转：桌面入口固定走 `/cgi/ThirdParty/port_one/index.cgi/`，安装、设置和启动时按向导选择同步 CGI 中的 HTTP/HTTPS 与端口。 |
 | **0.6.49** | 修复 fnOS 安装后访问端口为空、访问路径错误显示为 `/9788` 的问题；FPK 安装默认改用 HTTP 以提升兼容性，安装向导仍可选择 HTTPS。 |
 | **0.6.48** | 新增 HTTP/HTTPS 启动协议选择；启动时自动生成并复用自签名证书；fnOS 安装向导支持选择访问协议。 |
