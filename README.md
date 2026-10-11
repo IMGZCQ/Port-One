@@ -1,3 +1,12 @@
+
+# # 🔥【置顶公告】
+> # 本项目已迭代至更加炸裂的：M·Desk
+>
+> ## 本项目不再新增功能，所有后续开发、更新与维护全部迁移至新项目。
+>
+> ## 👉 访问新项目：[M·Desk](https://github.com/IMGZCQ/MDesk)
+
+
 <p align="center">
   <img src="./ICON.PNG" width="120" alt="Port One">
 </p>
